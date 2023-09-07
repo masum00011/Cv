@@ -7,7 +7,7 @@ import bgcover from "./assets/images/cover.jpg";
 import Link from "next/link";
 export default function Home() {
   return (
-    <main className="p-2 px-8 h-screen flex justify-center">
+    <main className="p-2 px-8 h-screen">
       <section className="Navbar flex justify-between px-24 py-4 items-center">
         <h1 className="text-[1.5rem] text-[blue]">Portfolio.</h1>
         <div className="text flex gap-4">
