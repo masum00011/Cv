@@ -1,11 +1,13 @@
 import Image from "next/image";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import bgcover from './assets/images/cover.jpg';
-
+import bgcover from "./assets/images/cover.jpg";
+// import ReactJS_Developer from "./assets/images/ReactJS_Developer.pdf";
+// import cv from '../public/'
+import Link from "next/link";
 export default function Home() {
   return (
-    <main className="p-2 px-8 h-screen">
+    <main className="p-2 px-8 h-screen flex justify-center">
       <section className="Navbar flex justify-between px-24 py-4 items-center">
         <h1 className="text-[1.5rem] text-[blue]">Portfolio.</h1>
         <div className="text flex gap-4">
@@ -25,10 +27,10 @@ export default function Home() {
       <section className="flex justify-evenly flex-wrap-reverse  my-28">
         <section className="text block self-center">
           <div>
-            <b className="">Hello, </b>
+            <b>Hello,</b> {""}
           </div>
           <div>
-            <b className="text-[4rem]">I'm Masum Reza</b>
+            <b className="text-[4rem]">I'm Masum Reza</b> {""}
           </div>
           <div>
             <b className="text-[3rem] text-[blue]">ReactJS/NextJS Developer</b>
@@ -36,12 +38,20 @@ export default function Home() {
           <div>
             <p>From Gurgaon</p>
           </div>
-          <a href="./assets/images/ReactJS_Developer.pdf" download>
-          <button className="bg-[blue] text-white py-2 px-4 my-4">Hire Me</button>
-          </a>
+          <Link href="/resume.pdf" download>
+            <button className="bg-[blue] text-white py-2 px-4 my-4">
+              Hire Me
+            </button>
+          </Link>
         </section>
         <section className="bg-img">
-          <Image height={500} width={500} src={bgcover} alt="cover" style={{mixBlendMode:'multiply'}} />
+          <Image
+            height={500}
+            width={500}
+            src={bgcover}
+            alt="cover"
+            style={{ mixBlendMode: "multiply" }}
+          />
         </section>
       </section>
     </main>
