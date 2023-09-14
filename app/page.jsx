@@ -6,7 +6,7 @@ import Link from "next/link";
 // import ReactJS_Developer from "./assets/images/ReactJS_Developer.pdf";
 // import cv from '../public/'
 export default function Home() {
-     
+
   return (
     <main className="container m-auto h-screen">
       <section className="Navbar flex justify-between  py-4 items-center">
