@@ -54,13 +54,14 @@ export default function Home() {
           </Link>
         </section>
         <section className="bg-img">
-          <Image
+          {bgcover ? <Image
             height={500}
             width={500}
             src={bgcover}
             alt="cover"
             style={{ mixBlendMode: "multiply" }}
-          />
+          />  : 'loading...'}
+         
         </section>
       </section>
     </main>
