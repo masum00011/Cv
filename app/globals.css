@@ -9,3 +9,33 @@ body {
 .main--card{
   border: 1.5px solid white;
 }
+
+.header-main{
+  position: relative;
+}
+.text-header .header::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: blue;
+  left: 0;
+  bottom: -0.1rem;
+  width: 5px; /* Initially set to 0, so no underline */
+  transition: all ease-in-out 1s;
+}
+
+.text-header .header:hover::after {
+  width: 100%;
+}
+.header{
+  transition: all ease 1s;
+}
+.header:hover{
+  color: white;
+}
+button{
+  transition: all ease .4s;
+}
+button:active{
+  scale: .8;
+}

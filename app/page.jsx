@@ -6,15 +6,23 @@ import Link from "next/link";
 // import ReactJS_Developer from "./assets/images/ReactJS_Developer.pdf";
 // import cv from '../public/'
 export default function Home() {
+  // export default function Home() <Link href="/about">About Us</Link>{
+    // <Link href="/skill">Skill</Link>
 
   return (
     <main className="container m-auto h-screen">
       <section className="Navbar flex justify-between  py-4 items-center">
         <h1 className="text-[1.5rem] text-[blue]">Portfolio.</h1>
-        <div className="text flex gap-4">
-          <p>Home</p>
-          <Link href="/about">About Us</Link>
-          <Link href="/skill">Skill</Link>
+        <div className="text-header flex gap-4">
+          <div className="header-main">
+          <p className="header">Home</p>
+          </div>
+          <div className="header-main">
+          <p className="header"><Link href="/about">About</Link></p>
+          </div>
+          <div className="header-main">
+          <p className="header"> <Link href="/skill">Skills</Link></p>
+          </div>
         </div>
         <div className="social-icon flex gap-4 text-[blue]">
           <a href="https://www.linkedin.com/in/masum-reza-148397199/">
